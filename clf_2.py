@@ -5,12 +5,11 @@ from PIL import Image
 import torch.nn as nn
 
 device = torch.device('cpu')
-path = ("5.pth")
 
 def predict(image_path):
     resnet = models.resnet34(pretrained=True)
     resnet = resnet.to(device)
-    resnet = torch.load(f"{path}")
+    resnet = torch.load("5.pth")
 
     transform = transforms.Compose([
     transforms.Resize(256),
