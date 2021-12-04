@@ -10,7 +10,7 @@ path = ("https://github.com/SugarLipsxX/Image-Classification-Diabetic-Retinopath
 def predict(image_path):
     resnet = models.resnet34(pretrained=True)
     resnet = resnet.to(device)
-    resnet = torch.load(f"{path}5.pth")
+    resnet = torch.load("https://github.com/SugarLipsxX/Image-Classification-Diabetic-Retinopathy/blob/5339939b460fe4eeec20686b5c8379530702283a/pt_file/5.pth")
 
     transform = transforms.Compose([
     transforms.Resize(256),
