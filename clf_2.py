@@ -5,7 +5,7 @@ from PIL import Image
 import torch.nn as nn
 
 device = torch.device('cpu')
-path = ("Image Classification Diabetic Retinopathy/pt_file/")
+path = ("https://github.com/SugarLipsxX/Image-Classification-Diabetic-Retinopathy/blob/5339939b460fe4eeec20686b5c8379530702283a/pt_file/")
 
 def predict(image_path):
     resnet = models.resnet34(pretrained=True)
