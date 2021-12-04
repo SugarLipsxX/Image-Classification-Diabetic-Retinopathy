@@ -9,7 +9,7 @@ device = torch.device('cpu')
 def predict(image_path):
     resnet = models.resnet34(pretrained=True)
     resnet = resnet.to(device)
-    resnet = torch.load("/home/app/image-classification-diabetic-retinopathy/5.pth")
+    resnet = torch.load("sugarlipsxx/image-classification-diabetic-retinopathy/main/5.pth")
 
     transform = transforms.Compose([
     transforms.Resize(256),
