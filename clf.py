@@ -9,7 +9,7 @@ path = ("")
 
 def predict(image_path):
     resnet = models.resnet34(pretrained=True)
-    resnet = torch.load("5.pth")
+    #resnet = torch.load("5.pth") 
     resnet = resnet.to(device)
     
     transform = transforms.Compose([
