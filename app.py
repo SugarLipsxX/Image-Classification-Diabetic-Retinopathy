@@ -9,12 +9,14 @@ st.write("")
 
 file_up = st.file_uploader("Upload an image", type=('jpg' , 'png'))
 
+file_up_2 = st.file_uploader("Upload model", type=('pt' , 'pth'))
+
 if file_up is not None:
     image = Image.open(file_up)
     st.image(image, caption='Uploaded Image.', use_column_width=True)
     st.write("")
     st.write("Just a second...")
-    labels = predict(file_up)
+    labels = predict(file_up,file_up_2)
 
     for i in labels:
         st.write("Prediction (index, name)", i[0], ",   Score: ", i[1])
