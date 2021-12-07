@@ -9,7 +9,7 @@ st.write("")
 
 file_up = st.file_uploader("Upload an image", type=('jpg' , 'png'))
 
-file_up_2 = st.file_uploader("Upload model", type=('pt' , 'pth'))
+#file_up_2 = st.file_uploader("Upload model", type=('pt' , 'pth'))
 
 if file_up is not None:
     image = Image.open(file_up)
