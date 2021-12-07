@@ -16,7 +16,7 @@ if file_up is not None:
     st.image(image, caption='Uploaded Image.', use_column_width=True)
     st.write("")
     st.write("Just a second...")
-    labels = predict(file_up,file_up_2)
+    labels = predict(file_up)
 
     for i in labels:
         st.write("Prediction (index, name)", i[0], ",   Score: ", i[1])
