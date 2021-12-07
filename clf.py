@@ -5,7 +5,7 @@ from PIL import Image
 import torch.nn as nn
 
 device = torch.device('cpu')
-path = ("C:\\Users\\NiN\\OneDrive\\Desktop\\Kerja\\Python\\Image_Classification\\pt_file\\")
+path = ("")
 
 def predict(image_path):
     resnet = models.resnet34(pretrained=True)
