@@ -7,9 +7,9 @@ import torch.nn as nn
 device = torch.device('cpu')
 path = ("")
 
-def predict(image_path):
+def predict(image_path,pt_file):
     resnet = models.resnet34(pretrained=True)
-    #resnet = torch.load("5.pth") 
+    resnet = torch.load(pt_file) 
     resnet = resnet.to(device)
     
     transform = transforms.Compose([
